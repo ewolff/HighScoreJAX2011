@@ -1,0 +1,15 @@
+entity --class ~.domain.Email
+field string recipient
+field string subject
+field string body
+// Database table to store the emails until they are sent
+
+finder list --class  ~.domain.Player
+finder add findPlayersByName
+// Just to make the web ui nicer
+
+controller scaffold --class ~.web.EMailController --entity ~.domain.EMail
+// To show the created emails etc.
+
+// Now we are ready to create the SendMailService class
+

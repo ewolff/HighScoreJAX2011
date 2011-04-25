@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_ewolff_highscore_domain_Player" items="${players}" z="pU3OYp2FdMSg7D+rAdfrrHYnXew=">
+        <table:table data="${players}" id="l_com_ewolff_highscore_domain_Player" path="/players" z="HsjCtdydNjbaZQAQ0c0Gnxvnq98=">
+            <table:column id="c_com_ewolff_highscore_domain_Player_name" property="name" z="kYzxP9xdqG+D+IUyGQTpCj3owiQ="/>
+            <table:column id="c_com_ewolff_highscore_domain_Player_firstname" property="firstname" z="ckMAmR6t8zF4k9Yv2icSVpxTAYk="/>
+            <table:column id="c_com_ewolff_highscore_domain_Player_email" property="email" z="zDcCTAydb36535IbUtg/y8kBHnU="/>
+        </table:table>
+    </page:list>
+</div>

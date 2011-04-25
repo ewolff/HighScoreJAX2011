@@ -1,0 +1,29 @@
+// Spring Roo 1.1.1.RELEASE [rev 156ccd6] log opened at 2011-01-21 16:12:06
+project --topLevelPackage com.ewolff.highscore --projectName HighScore --java 6
+// Create Projekt with sensible name
+
+persistence setup --provider ECLIPSELINK --database H2_IN_MEMORY
+// Choose JPA implementation and database. Might also add username and password
+
+entity --class ~.domain.Player
+// Create a new entity i.e. domain obects
+field string name
+field string firstname
+field string email
+// Several fields. Could also be added to the code
+// but this is easier
+
+entity --class ~.domain.HighScore
+field date --type java.util.Date --fieldName dateAt
+field number --type java.lang.Integer score
+field reference --class ~.domain.HighScore --fieldName player --type  ~.domain.Player --cardinality MANY_TO_ONE 
+
+controller all --package ~.web
+// Create a scaffolded web frontend
+
+
+// Further investigations
+// - The email is an arbitrary - how can you assure that it is a valid email address
+// - How can you assure that the data is not null?
+// - How can you assure that the String have a minimum lenght
+// - How can you find specific players?

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    
+<page:list id="pl_com_ewolff_highscore_domain_Email" items="${emails}" z="FXHcVH7BgnA45iqufhLYw6QrfUQ=">
+        <table:table data="${emails}" id="l_com_ewolff_highscore_domain_Email" path="/emails" z="rBS6iICjRRsHWz4P+5T0t12B5Qg=">
+            <table:column id="c_com_ewolff_highscore_domain_Email_recipient" property="recipient" z="ObL3ejQlCW6k8IzVp25QwIJ4yx0="/>
+            <table:column id="c_com_ewolff_highscore_domain_Email_subject" property="subject" z="WvgiHIJkZul+EDrkWb2Xs5lUIQQ="/>
+            <table:column id="c_com_ewolff_highscore_domain_Email_body" property="body" z="Qi4Eg02ePKcb5op0PKhAYyMQoS0="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_ewolff_highscore_domain_HighScore" object="${highscore}" path="/highscores" z="580GhQ24dZjgbIw4Ju8nD+h1lCk=">
+        <field:display date="true" dateTimePattern="${highScore_dateat_date_format}" field="dateAt" id="s_com_ewolff_highscore_domain_HighScore_dateAt" object="${highscore}" z="gLm1hjLF4g6eGC5EuaGuMK2dZDI="/>
+        <field:display field="score" id="s_com_ewolff_highscore_domain_HighScore_score" object="${highscore}" z="wN5thKgyfrDiSh+9MBZ9MbP2BTg="/>
+        <field:display field="player" id="s_com_ewolff_highscore_domain_HighScore_player" object="${highscore}" z="Igv2eb4dMkL27J0YyRJROxFyXy0="/>
+    </page:show>
+</div>
